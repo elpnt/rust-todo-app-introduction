@@ -2,5 +2,5 @@
   "github.copilot.enable": {
     "rust": false
   },
-  "rust-analyzer.linkedProjects": ["./Cargo.toml"]
+  "rust-analyzer.linkedProjects": ["./todos-api/Cargo.toml"]
 }
