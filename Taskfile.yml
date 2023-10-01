@@ -1,0 +1,21 @@
+version: "3"
+
+tasks:
+  build:
+    cmd: docker-compose build
+
+  db:
+    cmd: docker-compose up
+
+  dev:
+    cmds:
+      - sqlx db create
+      - sqlx migrate run
+      - cargo watch -x run
+
+  test:
+    cmd: cargo test
+
+  # Run tests except for the ones that require a database
+  test-s:
+    cmd: cargo test --no-default-features

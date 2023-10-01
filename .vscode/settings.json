@@ -1,7 +1,6 @@
 {
   "github.copilot.enable": {
-    "*": false
+    "rust": false
   },
-  "editor.inlayHints.enabled": "off",
   "rust-analyzer.linkedProjects": ["./Cargo.toml"]
 }
